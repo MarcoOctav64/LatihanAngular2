@@ -1,4 +1,15 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Start editing to see some magic happen :)
+  <a routerLink="/hal1">Hal1</a>
+  Silahkan Input Judul
+  <input type ="text" [(ngModel)]="textjudul"/>
+  <br>
+  Silahkan Input isi
+  <input type ="text" [(ngModel)]="textisi"/>
+  <br>
+  Silahkan Input tanggal
+  <input type ="text" [(ngModel)]="texttg"/>
+  <br>
+  <button (click)="Input()">Input Data</button>
+  <router-outlet></router-outlet>
 </p>
